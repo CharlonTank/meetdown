@@ -217,7 +217,7 @@ type alias Texts =
     , saving : String
     , search : String
     , searchForGroups : String
-    , searchingForOne : String
+    , subscribingToOne : String
     , searchResultsFor : String
     , showAll : String
     , showFirst : String
@@ -571,7 +571,7 @@ We’ll post any changes we make to our privacy notice on this page and, if they
     , saving = "Saving..."
     , search = "Search"
     , searchForGroups = "Search for groups"
-    , searchingForOne = "subscribing to one."
+    , subscribingToOne = "subscribing to one."
     , searchResultsFor = "Search results for "
     , showAll = "Show all"
     , showFirst = "Show first"
@@ -721,7 +721,7 @@ frenchTexts =
     , codeOfConduct1 = "Voici quelques conseils pour respecter la règle \"ne sois pas un.e imbécile\":"
     , codeOfConduct2 = "• Respecte les gens, peu importe leur race, leur genre, leur identité sexuelle, leur nationalité, leur apparence ou toute autre caractéristique."
     , codeOfConduct3 = "• Sois respectueux envers les organisateurs de groupes. Ils consacrent du temps à coordonner un événement et ils sont prêts à inviter des gens qu'ils ne connaissent pas. Ne trahis pas leur confiance en toi !"
-    , codeOfConduct4 = "• Pour les organisateurs de groupes: Faites en sorte que les gens se sentent inclus. Il est difficile pour les gens de participer s'ils se sentent comme des étrangers. "
+    , codeOfConduct4 = "• Pour les organisateurs de groupes: Faites en sorte que les gens se sentent inclus. Il est difficile pour les gens de participer s'ils se sentent comme des étrangers."
     , codeOfConduct5 = "• Si quelqu'un.e est un.e imbécile, ce n'est pas une excuse pour l'être aussi. Dis-leur d'arrêter et si ça ne marche pas, évite-les et explique le problème ici "
     , copyPreviousEvent = "Copier l'événement précédent"
     , createEvent = "Créer ton événement"
@@ -738,11 +738,11 @@ frenchTexts =
     , dontBeAJerk = "ne sois pas un.e imbécile"
     , edit = "Modifier"
     , editEvent = "Modifier l'événement"
-    , ended = "Terminé"
-    , endsIn = "Se termine dans"
+    , ended = "Terminé "
+    , endsIn = "Se termine dans "
     , enterYourEmailAddress = "Entre ton adresse email"
     , enterYourEmailFirst = "Entre ton email d'abord"
-    , eventCantBeMoreThan = "L'événement ne peut pas durer plus de"
+    , eventCantBeMoreThan = "L'événement ne peut pas durer plus de "
     , eventCanTStartInThePast = "L'événement ne peut pas commencer dans le passé"
     , eventDescriptionOptional = "Description de l'événement (optionnel)"
     , eventDurationText =
@@ -779,14 +779,14 @@ frenchTexts =
     , howManyHoursLongIsIt = "Combien d'heures dure-t-il ?"
     , howManyPeopleCanJoinLeaveThisEmptyIfThereSNoLimit = "Combien de personnes peuvent rejoindre (laisse vide s'il n'y a pas de limite)"
     , ifYouDontSeeTheEmailCheckYourSpamFolder = "Si tu ne vois pas l'email, vérifie ton dossier spam."
-    , imageEditor = "Éditeur d'images"
+    , imageEditor = "Éditeur d'image"
     , info = "Infos"
     , inPersonEvent = "événement en personne 🤝"
     , invalidDateFormatExpectedSomethingLike_2020_01_31 = "Format de date invalide. Attendu quelque chose comme 2020-01-31"
     , invalidEmailAddress = "Adresse email invalide"
     , invalidInput = "Entrée invalide. Écris quelque chose comme 1 ou 2.5"
     , invalidTimeFormatExpectedSomethingLike_22_59 = "Format d'heure invalide. Attendu quelque chose comme 22:59"
-    , invalidUrlLong = "URL invalide. Entrez quelque chose comme https://mon-hangout.com ou laissez-le vide"
+    , invalidUrlLong = "URL invalide. Entre quelque chose comme https://my-hangout.com ou laisse-le vide"
     , invalidValueChooseAnIntegerLike5Or30OrLeaveItBlank = "Valeur invalide. Choisis un entier comme 5 ou 30, ou laisse-le vide."
     , isItI = "C'est moi, "
     , itsTakingPlaceAt =
@@ -976,11 +976,11 @@ Nous publierons toute modification que nous apportons à notre avis de confident
     , saving = "Enregistrement en cours..."
     , search = "Rechercher"
     , searchForGroups = "Rechercher des groupes"
-    , searchingForOne = "rejoindre un groupe."
+    , subscribingToOne = "rejoindre un groupe."
     , searchResultsFor = "Résultats de recherche pour "
     , showAll = "Tout afficher"
     , showFirst = "Afficher les premiers"
-    , showAttendees = "(Afficher les participant·e·s)"
+    , showAttendees = "(Afficher\u{00A0}les\u{00A0}participant·e·s)"
     , signInAndWeWillGetYouSignedUpForThatEvent = "Connecte-toi et nous t'inscrirons pour cet événement"
     , signInAndWeWillGetYouSignedUpForThe = \eventName -> "Connecte-toi et nous t'inscrirons pour l'événement \"" ++ eventName ++ "\""
     , sinceThisIsYourFirstGroupWeRecommendYouReadThe = "Comme c'est ton premier groupe, nous te recommandons de lire les "
@@ -1072,7 +1072,6 @@ Nous pouvons fermer ton compte immédiatement si nous pensons que tu as :
 - Été abusif envers quiconque chez Meetdown ou un membre de notre communauté
 
 """
-
     , twoPeopleOnAVideoConference = "Deux personnes sur une vidéoconférence"
     , uncancelEvent = "Annuler l'annulation de l'événement"
     , uploadImage = "Télécharger une image"
@@ -1084,13 +1083,13 @@ Nous pouvons fermer ton compte immédiatement si nous pensons que tu as :
     , whatSTheNameOfYourGroup = "Comment s'appelle ton groupe ?"
     , whenDoesItStart = "Quand est-ce que ça commence ?"
     , youCanDoThatHere = "Tu peux le faire ici."
-    , youCanTEditEventsThatHaveAlreadyHappened = "Tu ne peux pas modifier les événements qui ont déjà eu lieu."
-    , youCanTEditTheStartTimeOfAnEventThatIsOngoing = "Tu ne peux pas modifier l'heure de début d'un événement qui est en cours."
-    , youHavenTCreatedAnyGroupsYet = "Tu n'as pas encore créé de groupes."
+    , youCanTEditEventsThatHaveAlreadyHappened = "Tu ne peux pas modifier les événements qui ont déjà eu lieu"
+    , youCanTEditTheStartTimeOfAnEventThatIsOngoing = "Tu ne peux pas modifier l'heure de début d'un événement qui est en cours"
+    , youHavenTCreatedAnyGroupsYet = "Tu n'as pas encore créé de groupes. "
     , youNeedToAllowAtLeast2PeopleToJoinTheEvent = "Tu dois autoriser au moins 2 personnes à rejoindre l'événement."
     , yourEmailAddress = "Ton adresse email"
     , yourName = "Ton nom"
-    , yourNameCantBeEmpty = "Ton nom ne peut pas être vide."
+    , yourNameCantBeEmpty = "Ton nom ne peut pas être vide"
     }
 
 
@@ -1380,8 +1379,7 @@ Publicaremos cualquier cambio que hagamos a nuestra política de privacidad en e
     , saving = "Guardando..."
     , search = "Buscar"
     , searchForGroups = "Buscar grupos"
-    , -- TODO: Check if it's searching or subscribing
-      searchingForOne = "Suscribiendo a un grupo."
+    , subscribingToOne = "suscribiendo a un grupo."
     , searchResultsFor = "Resultados de búsqueda para "
     , showAll = "Mostrar todo"
     , showFirst = "Mostrar primero"
